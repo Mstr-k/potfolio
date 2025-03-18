@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <title>Potfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <a href="#" class="logo">Mstr~KNY.</a>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Service</a>
-            <a href="#">Resume</a>
-            <a href="#">potfolio</a>
-            <a href="#">contact</a>
-        </nav>
-    </header>
-    <!-- home section -->
-     <section class="homepg">
+    
+    <div class="landing-page" id="home">
+        <div class="header">
+            <a href="#home" class="logo">Mstr~KNY.</a>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#service">Service</a>
+                <a href="#resume">Resume</a>
+                <a href="#">potfolio</a>
+                <a href="#">contact</a>
+            </nav>
+        </div>
+        <div class="homepg section">
             <div class="home-detail">
                 <h1>Mstr Kny </h1>
                 <h2>I'm a developer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam explicabo unde corporis laudantium sint nihil porro minus maiores? Officiis voluptates fuga eum aut sapiente corporis eos tempora! Cupiditate, delectus repudiandae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam <br>explicabo unde corporis laudantium sint nihil porro minus maiores? Officiis <br>voluptates fuga eum aut sapiente corporis eos tempora! Cupiditate, <br>delectus repudiandae?</p>
                 <div class="btn-sci">
                     <a href="#" class="btn">Download Cv</a>
                     <div class="sci">
@@ -42,6 +42,80 @@
                 </div>
             </div>
         </div>
-     </section>
+    </div>
+    <!-- services -->
+    <div class="section" id="service">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="service-container">
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bxs-paint'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bx-palette'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Graphic design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bx-trending-up'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bx-slideshow'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class='bx bx-camera'></i>
+                    <a href="#"><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Photography</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
+            </div>
+        </div>
+    </div>
+    <!-- Resume -->
+    <div class="section" id="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores, nostrum illo vel incidunt voluptatum suscipit </p>
+                <button class="resume-btn">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+            <div class="resume-box">
+                <div class="resume-detail experience">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi voluptates perspiciatis optio culpa, esse q</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
