@@ -8,22 +8,32 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-    <div class="landing-page" id="home">
-        <div class="header">
-            <a href="#home" class="logo">Mstr~KNY.</a>
-            <nav>
-                <a href="#home" class="active">Home</a>
-                <a href="#service">Service</a>
-                <a href="#resume">Resume</a>
-                <a href="#">potfolio</a>
-                <a href="#">contact</a>
-            </nav>
-        </div>
-        <div class="homepg section">
+    <!-- nav-begin -->
+    <!-- <div class="landing-page" id="home"> -->
+    <div class="header">
+        <a href="#" class="logo">Mstr~KNY.</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Resume</a>
+            <a href="#">potfolio</a>
+            <a href="#">contact</a>
+        </nav>
+    </div>
+    <!-- nav-end -->
+
+    <!-- home start -->
+    <section class="homepg ">
+        <div class="row">
             <div class="home-detail">
                 <h1>Mstr Kny </h1>
-                <h2>I'm a developer</h2>
+                <h2>I'm a 
+                    <span style="--i:1" data-text="Coder">Coder</span>
+                    <span style="--i:2" data-text="Youtuber">Youtuber</span>
+                    <span style="--i:3" data-text="Blogger">Blogger</span>
+                    <span style="--i:4" data-text="Designer">Designer</span>
+                </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam <br>explicabo unde corporis laudantium sint nihil porro minus maiores? Officiis <br>voluptates fuga eum aut sapiente corporis eos tempora! Cupiditate, <br>delectus repudiandae?</p>
                 <div class="btn-sci">
                     <a href="#" class="btn">Download Cv</a>
@@ -33,6 +43,7 @@
                         <a href="#"><i class='bx bxl-discord-alt'></i></a>
                         <a href="#"><i class='bx bxl-youtube'></i></a>
                     </div>
+                </div>
             </div>
             <div class="home-img">
                 <div class="img-box">
@@ -42,13 +53,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- services -->
-    <div class="section" id="service">
+    </section>
+    <!-- home end -->
+
+    <!-- services start -->
+    <section class="service">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="service-container">
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bx-code-alt'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -56,7 +69,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bxs-paint'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -64,7 +77,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bx-palette'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -72,7 +85,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bx-trending-up'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -80,7 +93,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bx-slideshow'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -88,7 +101,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
             <div class="service-box">
-                <div class="service-icon">
+                <div class="icon">
                     <i class='bx bx-camera'></i>
                     <a href="#"><i class="bx bx-arrow-back"></i></a>
                 </div>
@@ -96,26 +109,40 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum enim vitae exercitationem, debitis quam, corrupti, fugit adipisci iste accusamus? </p>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- service end -->
     <!-- Resume -->
-    <div class="section" id="resume">
+    <section class="resume">
         <div class="resume-container">
             <div class="resume-box">
                 <h2>Why Hire Me</h2>
                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores, nostrum illo vel incidunt voluptatum suscipit </p>
-                <button class="resume-btn">Experience</button>
+                <button class="resume-btn active">Experience</button>
                 <button class="resume-btn">Education</button>
                 <button class="resume-btn">Skills</button>
                 <button class="resume-btn">About Me</button>
             </div>
             <div class="resume-box">
-                <div class="resume-detail experience">
+                <div class="resume-detail experience active ">
                     <h2 class="heading">My <span>Experience</span></h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi voluptates perspiciatis optio culpa, esse q</p>
                 </div>
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi voluptates perspiciatis optio culpa, esse q</p>
+                </div>
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi voluptates perspiciatis optio culpa, esse q</p>
+                </div>
+                <div class="resume-detail about">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi voluptates perspiciatis optio culpa, esse q</p>
+                </div>
+
             </div>
         </div>
-    </div>
-
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
