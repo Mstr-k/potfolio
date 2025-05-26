@@ -24,6 +24,8 @@ html{
 body{
     color: var(--white-color);
     /* position: fixed; */
+    background: var(--bg-color);
+    overflow-x: hidden;
 }
 .landing-page{
     padding: 0;
@@ -512,7 +514,7 @@ section{
     top: -60%;
     left: 50%;
     transform: translateX(-50%) scale(.9);
-    font-size: 1,6rem;
+    font-size: 1.6rem;
     white-space: nowrap;
     padding: .5rem 1rem;
     border-radius: .6rem;
@@ -531,7 +533,7 @@ section{
 }
 .portfolio-box .portfolio-carousel{
     width: 100%;
-    height: 45rem;
+    height: 42rem;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -566,6 +568,10 @@ section{
     font-size: 4rem;
     color: var(--main-color);
     cursor: pointer;
+}
+.portfolio-box .navigation button.disabled {
+    border-color: var(--second-bg-color);
+    color: var(--disabeled-color);
 }
 .portfolio-box .navigation .arrow-right {
     margin-left:1.5rem;
