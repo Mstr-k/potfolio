@@ -55,3 +55,19 @@ arrowLeft.addEventListener('click',() => {
     }
     activePortfolio();
 });
+// Smooth scroll to sections
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetSelector = this.getAttribute("data-target");
+        const targetSection = document.querySelector(targetSelector);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Optional: update active link styling
+        document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
