@@ -71,3 +71,33 @@ document.querySelectorAll(".nav-link").forEach(link => {
         this.classList.add("active");
     });
 });
+
+// === ScrollSpy ===
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            current = `.${section.classList[0]}`; // e.g., ".home", ".about"
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("data-target") === current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+function showSuccessMessage() {
+    setTimeout(() => {
+        alert("Your message has been sent!");
+    }, 100); // slight delay to avoid form auto-clearing before alert
+}

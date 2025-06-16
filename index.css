@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
+/*base css*/
 *{
     font-family: "Poppins", serif;
     margin: 0;
@@ -32,18 +32,33 @@ body{
     margin: 0;
     
     
+ }
+
+/*Header*/
+
+.head{
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    z-index: 10;
+    height: inherit;
 }
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    max-width: 1200px;
+    margin:auto;
     width: 100%;
     z-index: 100;
     background-color: var(--bg-color);
-    padding: 2rem 9%;
+    padding: 1rem 2rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: aliceblue; */
 }      
 .logo{
     font-size: 3rem;
@@ -51,7 +66,7 @@ body{
     font-weight: 700;
 }
 nav a{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:var(--white-color);
     font-weight: 500;
     margin-left: 3.2rem;
@@ -66,18 +81,25 @@ nav a:hover,.active{
     display: none;
 }
 
-/* home styling */
+/* components */
+
 section{
-    width: 100%;
-    /* height: 100vh; */
-    padding: 10rem 9% 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*min-height: 100%;*/
+    padding: 7rem 1rem 0;
     background: var(--bg-color);
-    
-} 
+}
+
+/*end*/
+
+/* home styling */
+
 .homepg{
     display: flex;
     align-items: center;
-    height: 100vh;
+
+    /*height: 100%;*/
     /* width: 100%; */
     /* border: 2px solid yellow; */
     /* background-color: aqua; */
@@ -90,6 +112,10 @@ section{
     /* border: 2px solid yellow; */
     /* background-color: aqua; */
     width: 100%;
+    padding: 4rem 0;
+}
+.homepg .home-detail{
+    width: 50%;
 }
 .home-detail h1{
     font-size: clamp(3.5rem,10vh,5.5rem);
@@ -173,10 +199,13 @@ section{
     color: var(--bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+home-img{
+    width: 50%;
+}
 .home-img .img-box {
     position: relative;
-    width: 32vw;
-    height: 32vw;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     padding: .5rem;
     display: flex;
@@ -224,12 +253,14 @@ section{
     mix-blend-mode: lighten;
 }
 
+/* end */
 
 /* services styling */
+
 .heading{
     font-size: 4.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.9rem;
 }
 .heading span{
     color: var(--main-color);
@@ -245,6 +276,8 @@ section{
     border: .2rem solid var(--second-bg-color);
     border-radius: 1rem;
     transition: .5s;
+
+
 } 
 .service-container .service-box:hover{
     border-color: var(--main-color);
@@ -257,7 +290,7 @@ section{
 }
 .service-box .icon  i  { 
     font-size: 4.5rem;
-    transition: .5sec;
+    transition: .5s;
 }
 .service-box:hover .icon:not(a i){
     color: var(--main-color);
@@ -289,7 +322,7 @@ section{
 
 .service-box h3{
     font-size: 3rem;
-    margin: .5rem 0 2rem;
+    margin: .5rem 0 1rem;
     transition: .5s;
 }
 .service-box:hover h3{
@@ -299,9 +332,12 @@ section{
     font-size: 1.4rem;
 }
 
+/*end*/
+
 /* resume styling */
+
 .resume{
-    height: 120vh;
+    /* height: 120vh; */
 }
 .resume-container{
     display: grid;
@@ -448,10 +484,12 @@ section{
     font-size: 1.8rem;
 }
 
+/*end*/
 
-/* potfolio styling */
+/* portfolio styling */
+
 .portfolio{
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .portfolio-container{
     display: grid;
@@ -577,14 +615,18 @@ section{
     margin-left:1.5rem;
 }
 
+/*end*/
+
 /* contact styling */
+
 .contact{
-    height: 100vh;
+    /*height: 95vh;*/
 }
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 3rem;
+    padding: 0 0 3rem;
 }
 .contact-container .contact-box:first-child{
     align-self: center;
@@ -625,6 +667,7 @@ section{
 .contact-box .heading{
     font-size: 3.5rem;
 }
+
 .contact-box .field-box {
     grid-template-columns: repeat(2,1fr);
     display: grid;
@@ -652,3 +695,16 @@ section{
     margin-top: 2rem;
     cursor: pointer;
 }
+
+/*end*/
+
+/*media queris*/
+@media (max-width:  800px) {
+    .row{
+
+        flex-direction: column-reverse;
+        /*background-color: red;*/
+        padding: 0.5rem
+    }
+}
+/*end*/
