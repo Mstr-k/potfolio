@@ -96,8 +96,62 @@ window.addEventListener("scroll", () => {
     });
 });
 
-function showSuccessMessage() {
-    setTimeout(() => {
-        alert("Your message has been sent!");
-    }, 100); // slight delay to avoid form auto-clearing before alert
-}
+// function showSuccessMessage() {
+//     setTimeout(() => {
+//         alert("Your message has been sent!");
+//     }, 100); // slight delay to avoid form auto-clearing before alert
+// }
+
+// menu(toggle)
+const toggleBtn = document.getElementById("menu-toggle");
+const menuIcon = document.getElementById("menu-icon");
+const nav = document.getElementById("navbar");
+
+toggleBtn.addEventListener("click", (e) => {
+    nav.classList.toggle("active");
+
+    // Switch icon
+    if (nav.classList.contains("active")) {
+        menuIcon.classList.replace("bx-menu", "bx-x");
+    } else {
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    }
+
+    // Prevent click from propagating to body
+    e.stopPropagation();
+});
+// Click outside to close menu
+document.body.addEventListener("click", () => {
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    }
+});
+
+
+// the form(prevent redirecting)
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent default form submission
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            alert("Message sent successfully!");
+            form.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    } catch (error) {
+        alert("Network error. Please check your connection.");
+    }
+});
