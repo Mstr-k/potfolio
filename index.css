@@ -794,11 +794,19 @@ home-img{
         width: 100%;
 
     }
+    .contact-box{
+        grid-template-columns: 1fr;
+        width: 100%;
+
+    }
     .contact-box form{
         padding: 1.5rem;
+        width: 100%;
+        grid-template-columns: 1fr;
     }
     .contact-box .field-box{
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }
 /*end*/
