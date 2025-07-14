@@ -704,17 +704,17 @@ home-img{
 }
 
 /* Mobile (max-width: 599px) */
-@media (max-width:599px) {
+@media (max-width: 768px)
+/*@media (max-width:599px) {*/
+{
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /*outline: 1px solid red;*/
     }
     section{
-        /*width: 100%;*/
-        /*padding: 0;*/
-        /*margin: 0;*/
+        width: 100%;
+        margin: 0;
     }
     .header{
         /*display: none;*/
