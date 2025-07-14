@@ -783,11 +783,15 @@ home-img{
         grid-template-columns: 1fr;
         /*width: 100vw;*/
     }
+    .service-container .service-box{
+        padding: 1.5rem;
+    }
     .resume-container{
         grid-template-columns: 1fr;
     }
     .portfolio-container{
         grid-template-columns: 1fr;
+
     }
     .contact-container{
         grid-template-columns: 1fr;
