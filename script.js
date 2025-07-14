@@ -134,7 +134,8 @@ const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', async function (e) {
     e.preventDefault(); // Prevent default form submission
-    const data = new FormData(form);
+    const data = new Fo
+    rmData(form);
 
     try {
         const response = await fetch(form.action, {

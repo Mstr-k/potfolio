@@ -85,7 +85,7 @@ nav a:hover,.active{
 }
 
 .bx {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 /* components */
@@ -105,19 +105,11 @@ section{
 .homepg{
     display: flex;
     align-items: center;
-
-    /*height: 100%;*/
-    /* width: 100%; */
-    /* border: 2px solid yellow; */
-    /* background-color: aqua; */
-
 }
 .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid yellow; */
-    /* background-color: aqua; */
     width: 100%;
     padding: 4rem 0;
 }
@@ -125,12 +117,11 @@ section{
     width: 50%;
 }
 .home-detail h1{
-    /*font-size: clamp(5rem,10vh,5.5rem);*/
     font-size: 6rem;
 }
 .home-detail h2{
     display: inline-block;
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-top: -1rem;
 }
 .home-detail h2 span{
@@ -171,7 +162,6 @@ section{
 .home-detail .btn-sci{
     display: flex;
     align-items: center;
-
 }
 .btn{
     display: inline-block;
@@ -180,7 +170,7 @@ section{
     border: .2rem solid var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--bg-color);
     font-weight: 500;
     transition: .2s;
@@ -195,10 +185,10 @@ section{
 }
 .home-detail .btn-sci .sci a {
     display: inline-flex;
-    padding: .8rem;
+    padding: .7rem;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 2px;
     color: var(--main-color);
     margin: 0 .8rem;
 }
@@ -220,7 +210,6 @@ home-img{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* background-color: aqua; */
 }
 .home-img .img-box::before,
 .home-img .img-box::after{
@@ -275,8 +264,9 @@ home-img{
 }
 .service-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
+    /*width: 100%;*/
 }
 .service-container .service-box{
     padding: 3rem 2.5rem;
@@ -628,13 +618,14 @@ home-img{
 /* contact styling */
 
 .contact{
-    /*height: 95vh;*/
+
 }
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: 3rem;
     padding: 0 0 3rem;
+    width:100%;
 }
 .contact-container .contact-box:first-child{
     align-self: center;
@@ -718,11 +709,12 @@ home-img{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /*width: 100%;*/
         /*outline: 1px solid red;*/
     }
     section{
-        width: 100%;
+        /*width: 100%;*/
+        /*padding: 0;*/
+        /*margin: 0;*/
     }
     .header{
         /*display: none;*/
@@ -741,6 +733,10 @@ home-img{
         padding-bottom: 3rem;
         transition: max-height 0.3s ease-in-out;
         display: none;
+    }
+    .logo{
+        font-size: 2.4rem;
+        /*font-weight: 500;*/
     }
     nav.active{
         display:flex;
@@ -777,9 +773,15 @@ home-img{
         text-align: center;
     }
     .home-img .img-box{
-        width: 380px;
-        height: 380px;
+        width: 33rem;
+        /*display: inline-block;*/
+        height:33rem;
+        /*width: 100%;*/
         margin: 2rem auto;
+    }
+    .service-container{
+        grid-template-columns: 1fr;
+        /*width: 100vw;*/
     }
     .resume-container{
         grid-template-columns: 1fr;
@@ -790,6 +792,10 @@ home-img{
     .contact-container{
         grid-template-columns: 1fr;
         width: 100%;
+
+    }
+    .contact-box form{
+        padding: 1.5rem;
     }
     .contact-box .field-box{
         grid-template-columns: 1fr;
